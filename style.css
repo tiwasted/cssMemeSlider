@@ -1,0 +1,20 @@
+
+
+.img-meme {
+    display: flex;
+    justify-content: center;
+}
+
+.img-meme img {
+    width: 700px;
+}
+
+.pagination {
+
+}
+
+.text-meme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
