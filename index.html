@@ -11,15 +11,32 @@
   </head>
   <body>
     <main>
-        <div class="img-meme">
-            <img src="img/meme-1.jpg" alt="meme-1">
-        </div>
-        <div class="pagination">
 
+      <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+    
+        <div class="slides">
+            <div class="slide" id="s1">
+                <img src="img/1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide" id="s2">
+                <img src="img/1.jpg" alt="Slide 2">
+            </div>
+            <div class="slide" id="s3">
+                <img src="img/1.jpg" alt="Slide 3">
+            </div>
         </div>
-        <span class="test-meme">
-          random text
-        </span>
+    
+        <div class="slider_pagination">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+        </div>
+    </div>
+    
+
     </main>
   </body>
 </html>
