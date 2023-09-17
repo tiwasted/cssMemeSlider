@@ -1,7 +1,13 @@
-
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .slider {
     max-width: 100%;
+    margin-top: 100px;
     overflow: hidden;
 }
 
@@ -10,36 +16,58 @@
     transition: transform 0.5s ease;
 }
 
+.slides p {
+    font-size: 24px;
+}
+
 .slide {
     flex: 0 0 100%;
+    text-align: center;
+    border: #000;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .slide img {
-    max-width: 100%;
-    height: auto;
+    width: 650px;
+    height: 550px;
 }
 
 .slider input[type="radio"] {
     display: none;
 }
 
-.slider_pagination {
-    text-align: center;
-    margin-top: 10px;
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
 
-.slider_pagination label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #000;
+.dots label {
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
+    border: solid #000 3px;
     cursor: pointer;
-    margin: 0 5px;
+    transition: all 0.15s ease;
+    margin: 5px;
+    background-color: #000;
 }
 
-.slider_pagination label:hover {
-    background-color: #f00;
+#slide1:checked ~ .dots label[for="slide1"],
+.dots label[for="slide1"]:hover {
+    background-color: transparent;
+}
+
+#slide2:checked ~ .dots label[for="slide2"],
+.dots label[for="slide2"]:hover {
+    background-color: transparent;
+}
+
+#slide3:checked ~ .dots label[for="slide3"],
+.dots label[for="slide3"]:hover {
+    background-color: transparent;
 }
 
 #slide1:checked ~ .slides {
