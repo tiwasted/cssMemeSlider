@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Meme Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+
+      <div class="slider">
+
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        
+        <div class="slides">
+            <div class="slide" id="s1">
+                <img src="img/1.gif" alt="Slide 1">
+            </div>
+
+            <div class="slide" id="s2">
+                <img src="img/2.jpg" alt="Slide 2">
+            </div>
+
+            <div class="slide" id="s3">
+                <img src="img/3.jpg" alt="Slide 3">    
+            </div>
+
+            <div class="slide" id="s4">
+              <img src="img/4.jpg" alt="Slide 4">    
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="captions">
+              <div class="caption" id="caption1">Когда library не вызвало особых проблем, а MemeSlider делаешь 3-й день</div>
+              <div class="caption" id="caption2">-Срочно! Как можно стать разработчиком быстро? <br> -Может купим курсы от скиллбокс? <br>-Может стоит пройти обучение от RSSchool?</div>
+              <div class="caption" id="caption3">Когда долго не мог найти баг, а потом понял что баг это весь код</div>
+              <div class="caption" id="caption4">-По статистики каждый третий не сдает теорию от RSSchool<br>-Я сдаю<br>-Я тоже</div>
+          </div>
+          <div class="dots">
+              <label for="slide1" class="dot"></label>
+              <label for="slide2" class="dot"></label>
+              <label for="slide3" class="dot"></label>
+              <label for="slide4" class="dot"></label>
+              
+          </div>
+      </div>
+    
+    </div>
+    
+    </main>
+  </body>
+</html>
